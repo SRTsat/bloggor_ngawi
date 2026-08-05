@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="w-full px-6 sm:px-12 lg:px-20 h-16 flex items-center justify-between">
         {/* Logo dengan Aksen Violet */}
         <Link 
           href="/" 

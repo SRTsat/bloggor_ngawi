@@ -4,18 +4,18 @@ import Link from 'next/link';
 const projectsData = [
   {
     id: '1',
-    title: 'Situs Portofolio & Blog Pribadi',
+    title: 'bloggor ngawi',
     description: 'Situs web personal yang dibangun menggunakan Next.js App Router, Tailwind CSS, dan MDX untuk dokumentasi belajar.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'MDX'],
-    github: 'https://github.com',
-    demo: 'https://vercel.com',
+    github: 'https://github.com/SRTsat/bloggor_ngawi',
+    demo: '',
   },
   {
     id: '2',
-    title: 'Sistem Manajemen perpustakaan',
-    description: 'Aplikasi frontend yang dikembangkan pakai React waktu magang SMK untuk manajemen tugas internal tim.',
-    tech: ['React', 'JavaScript', 'Tailwind CSS', 'REST API'],
-    github: 'https://github.com',
+    title: 'episoria V2',
+    description: 'sistem manajemen perputakan, dengan fitur yang lengkap dengan ada fitur denda dan juga mempermudahkan masuk dan keluarnya buku.',
+    tech: ['laravel', 'Tailwind CSS', ],
+    github: 'https://github.com/SRTsat/Epistoria_V2',
     demo: '',
   },
   {
