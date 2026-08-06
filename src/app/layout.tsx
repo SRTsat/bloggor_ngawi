@@ -1,14 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
-  title: 'Portofolio & Blog Pribadi',
-  description: 'Situs portofolio dan blog yang dibuat menggunakan Next.js',
+  title: 'Bloggor Ngawi',
+  description: 'Situs portofolio',
 };
 
 export default function RootLayout({
@@ -18,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className={`${inter.className} bg-gray-950 text-gray-100 min-h-screen flex flex-col`}>
+      <body className="text-black min-h-screen flex flex-col selection:bg-[#000080] selection:text-white p-2 sm:p-4">
         <Navbar />
-        <main className="flex-1 w-full px-6 sm:px-12 lg:px-20 py-8">
+        <main className="flex-1 w-full max-w-6xl mx-auto py-4">
           {children}
         </main>
         <Footer />

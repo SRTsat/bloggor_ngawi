@@ -43,10 +43,10 @@ export default function ProjectsPage() {
         {projectsData.map((project) => (
           <div 
             key={project.id}
-            className="p-6 bg-gray-900/50 border border-gray-800/80 rounded-xl hover:border-violet-500/50 transition flex flex-col justify-between group"
+            className="p-6 bg-gray-900/50 border border-gray-800/80 rounded-xl hover:border-gray-500/50 transition flex flex-col justify-between group"
           >
             <div className="space-y-4">
-              <h2 className="text-xl font-semibold text-gray-200 group-hover:text-violet-400 transition">
+              <h2 className="text-xl font-semibold text-gray-200 group-hover:text-gray-400 transition">
                 {project.title}
               </h2>
               <p className="text-gray-400 text-sm leading-relaxed">

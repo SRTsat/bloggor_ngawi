@@ -2,54 +2,66 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="space-y-16 py-8">
-      {/* Hero Section */}
-      <section className="space-y-6">
-        <div className="inline-block px-3 py-1 text-xs font-semibold text-violet-400 bg-violet-950/50 border border-violet-800/50 rounded-full">
-          ambawi
+    <div className="space-y-6">
+      {/* Jendela Utama */}
+      <div className="win95-window p-1">
+        {/* Title Bar Navy Blue */}
+        <div className="bg-[#000080] text-white px-2 py-1 flex justify-between items-center text-xs font-bold">
+          <span>C:\AMBAWI\WELCOME.EXE</span>
+          <div className="flex gap-1">
+            <button className="win95-btn text-black px-1.5 py-0 text-xs">_</button>
+            <button className="win95-btn text-black px-1.5 py-0 text-xs">X</button>
+          </div>
         </div>
-        
-        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-100 leading-tight">
-          Halo, saya <span className="text-violet-400">Web Developer</span>.
-        </h1>
-        
-        <p className="text-gray-400 text-lg sm:text-xl max-w-2xl leading-relaxed">
-          a larper become web developer, have less skill in communication, and love searching about new tech.
-        </p>
 
-        {/* Action Buttons */}
-        <div className="flex flex-wrap gap-4 pt-2">
-          <Link 
-            href="/projects" 
-            className="px-6 py-3 bg-violet-600 hover:bg-violet-500 text-white font-medium rounded-lg transition shadow-lg shadow-violet-900/20"
-          >
-            see more about my irrelevant projects
-          </Link>
-          <Link 
-            href="/blog" 
-            className="px-6 py-3 bg-gray-900 hover:bg-gray-800 text-gray-300 font-medium rounded-lg border border-gray-800 transition"
-          >
-            read my blog like good individual
-          </Link>
-        </div>
-      </section>
+        {/* Isi Dalam Jendela */} 
+        <div className="p-4 sm:p-6 space-y-6">
+          <div className="flex items-center gap-2">
+            <span className="win95-btn px-2 py-0.5 text-xs font-bold">Status:</span>
+            <span className="text-xs font-bold text-blue-900">online</span>
+          </div>
 
-      {/* Tech Stack Preview */}
-      <section className="border-t border-gray-800/80 pt-12">
-        <h2 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-6">
-          Tech yang Pernah Gw Pake atau yang pernah gw sentuh.
-        </h2>
-        <div className="flex flex-wrap gap-3">
-          {['React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Laravel', 'PHP', 'Git', 'MySQL'].map((tech) => (
-            <span 
-              key={tech} 
-              className="px-3.5 py-1.5 bg-gray-900 text-gray-300 border border-gray-800 rounded-md text-sm font-medium"
+          <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-black">
+            Halo, saya <span className="bg-[#000080] text-white px-1">Web Developer.</span>
+          </h1>
+
+          <div className="win95-inset p-3 text-sm text-gray-800 font-mono">
+            a larger become web developer, have less skill in communication, and love searching about new tech.
+          </div>
+
+          <div className="flex flex-wrap gap-3 pt-2 text-xs font-bold">
+            <Link 
+              href="/projects" 
+              className="win95-btn px-4 py-2 text-black hover:bg-gray-300"
             >
-              {tech}
-            </span>
-          ))}
+              See Projects
+            </Link>
+            <Link 
+              href="/blog" 
+              className="win95-btn px-4 py-2 text-black hover:bg-gray-300"
+            >
+              Read Blog
+            </Link>
+          </div>
         </div>
-      </section>
+      </div>
+
+      {/* Jendela Tech Stack */}
+      <div className="win95-window p-1">
+        <div className="bg-[#808080] text-white px-2 py-1 text-xs font-bold">
+          SYSTEM_PROPERTIES.SYS
+        </div>
+        <div className="p-4">
+          <p className="text-xs font-bold mb-3">TECH YANG PERNAH GW PAKE ATAU GW SENTUH:</p>
+          <div className="flex flex-wrap gap-2 text-xs">
+            {['React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Laravel', 'PHP', 'Git', 'MySQL'].map((tech) => (
+              <span key={tech} className="win95-btn px-2 py-1 text-black font-mono">
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+} 
