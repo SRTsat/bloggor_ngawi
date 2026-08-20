@@ -20,10 +20,10 @@ const projectsData = [
   },
   {
     id: '3',
-    title: 'Web Sistem Informasi SMK',
-    description: 'Proyek akhir SMK menggunakan Laravel untuk backend dan Blade template untuk antarmuka pengguna.',
-    tech: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
-    github: 'https://github.com',
+    title: 'program otomatis respon WA',
+    description: 'program otomatis respon reply wa dengan cara cek text yang di kirim terus dibales sama reply yang kita set, ini pake whatsapp-web.js sama qrcode-terminal buat connect ke hp',
+    tech: ['nodeJS'],
+    github: 'https://github.com/SRTsat/Whatapps-autorespon',
     demo: '',
   },
 ];
